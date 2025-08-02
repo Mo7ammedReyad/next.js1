@@ -1,5 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'standalone'
-};
-module.exports = nextConfig;
+/** @type {import('@opennext/cloudflare').Config} */
+export default {
+  // ده الحد الأدنى المطلوب عشان ميبقاش فاضي
+  routes: [
+    { src: "/.*", dest: "/" }
+  ]
+}
