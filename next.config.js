@@ -1,8 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
+// opennext.config.mjs
+export default {
+  output: {
+    cloudflare: true,
   },
 };
-
-module.exports = nextConfig;
