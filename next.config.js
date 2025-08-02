@@ -1,7 +1,8 @@
-/** @type {import('@opennext/cloudflare').Config} */
-export default {
-  // ده الحد الأدنى المطلوب عشان ميبقاش فاضي
-  routes: [
-    { src: "/.*", dest: "/" }
-  ]
-}
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
+};
+
+module.exports = nextConfig;

@@ -2,9 +2,6 @@
   "name": "next-on-workers-demo",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "build:worker": "npx @opennextjs/cloudflare build"
   },
   "dependencies": {
