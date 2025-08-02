@@ -1,10 +1,13 @@
 {
   "name": "next-on-workers-demo",
-  "main": ".open-next/worker.js",
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
+  "type": "javascript",
+  "account_id": "your-account-id",
+  "workers_dev": true,
+  "compatibility_date": "2024-06-01",
+  "build": {
+    "command": "npm install && npm run build:worker"
   },
-  "compatibility_date": "2025-08-02",
-  "compatibility_flags": ["nodejs_compat"]
+  "site": {
+    "bucket": "./.vercel/output/static"
+  }
 }

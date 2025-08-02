@@ -1,8 +1,5 @@
-const { withCloudflare } = require("@opennextjs/cloudflare");
-
-module.exports = withCloudflare({
-  reactStrictMode: true,
-  experimental: {
-    runtime: "experimental-edge"
-  }
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'standalone'
+};
+module.exports = nextConfig;
